@@ -9,6 +9,8 @@
     "chalk": "^5.3.0",
     "execa": "^8.0.1",
     "inquirer": "^9.2.12",
+    "log-symbols": "^6.0.0",
+    "ora": "^8.0.1",
     "shelljs": "^0.8.5"
   },
   "description": "CLI para agilizar o processo de criação de projetos em TLPP e ADVPR",
@@ -16,6 +18,7 @@
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^3",
     "@types/chai": "^4",
+    "@types/listr": "^0.14.9",
     "@types/mocha": "^10",
     "@types/node": "^18",
     "@types/shelljs": "^0.8.15",
@@ -69,14 +72,14 @@
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bugs": "https://github.com/Tiago-msC/tlpp-dev-cli/issues",
   "keywords": [
-    "oclif",
     "tlpp",
     "advpl",
     "tlpp-dev-cli",
-    "advpr"
+    "advpr",
+    "devtools"
   ],
   "types": "dist/index.d.ts",
   "exports": "./lib/index.js",
