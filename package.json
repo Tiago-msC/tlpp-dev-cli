@@ -18,6 +18,7 @@
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^3",
     "@types/chai": "^4",
+    "@types/inquirer": "^9.0.7",
     "@types/listr": "^0.14.9",
     "@types/mocha": "^10",
     "@types/node": "^18",
