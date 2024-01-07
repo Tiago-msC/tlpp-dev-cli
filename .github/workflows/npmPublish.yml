@@ -73,6 +73,7 @@ jobs:
         with:
           node-version: ${{ inputs.nodeVersion }}
       - run: npm install
+      - run: npm i --save-dev @types/inquirer
       - run: npm run build
       - run: npm install sfdx-cli -g @salesforce/plugin-release-management --omit=dev
 
