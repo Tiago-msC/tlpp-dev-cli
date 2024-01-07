@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
           cache: npm
-      - run: npm install --network-timeout 600000
+          cache-dependency-path: "./tlppdevcli/package-lock.json"
+      - run: npm install
       - run: npm run build
       - run: npm run test
