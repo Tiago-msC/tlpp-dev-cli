@@ -72,8 +72,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ inputs.nodeVersion }}
-      - run: yarn install --network-timeout 600000
-      - run: yarn build
+      - run: npm install
+      - run: npm run build
       - run: npm install sfdx-cli -g @salesforce/plugin-release-management --omit=dev
 
       # when dryrun is true: publish with --dryrun flag
