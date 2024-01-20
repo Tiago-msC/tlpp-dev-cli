@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
+          token: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
 
       - uses: oclif/github-workflows/.github/actions/getPreReleaseTag@main
         id: distTag
@@ -43,9 +43,9 @@ jobs:
           git-user-name: svc-cli-bot
           git-user-email: svc_cli_bot@salesforce.com
           github-token: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
-          tag-prefix: ""
+          tag-prefix: ''
           # Setting 'release-count' to 0 will keep ALL releases in the change log (no pruning)
-          release-count: "0"
+          release-count: '0'
           pre-release: ${{ inputs.prerelease }}
           pre-release-identifier: ${{ steps.distTag.outputs.tag }}
           # ternary-ish: https://github.com/actions/runner/issues/409#issuecomment-752775072
