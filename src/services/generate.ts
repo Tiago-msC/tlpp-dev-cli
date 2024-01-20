@@ -15,6 +15,7 @@ export class GenerateService {
   }
   
   async tests(name: string): Promise<void> {
+    console.log('');
     const spinnerSuite = ora('Gerando Suite').start();
     await this.delayedGenerate(name, generateSuite);
     spinnerSuite.succeed();
