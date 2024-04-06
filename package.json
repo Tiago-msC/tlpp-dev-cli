@@ -24,7 +24,7 @@
     "@types/node": "^18",
     "@types/shelljs": "^0.8.15",
     "@types/sinon": "^17.0.3",
-    "chai": "^4",
+    "chai": "^5",
     "eslint": "^8",
     "eslint-config-oclif": "^5",
     "eslint-config-oclif-typescript": "^3",
