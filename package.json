@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "@oclif/core": "^3",
-    "@oclif/plugin-help": "^5",
+    "@oclif/plugin-help": "^6",
     "chalk": "^5.3.0",
     "execa": "^8.0.1",
     "inquirer": "^9.2.14",
