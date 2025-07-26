@@ -4,7 +4,6 @@
     "tdc": "./bin/run.js"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@oclif/core": "^4",
     "@oclif/plugin-help": "^6",
     "chalk": "^5.4.1",
@@ -13,16 +12,6 @@
     "log-symbols": "^7.0.1",
     "ora": "^8.2.0",
     "shelljs": "^0.10.0"
-=======
-    "@oclif/core": "^3",
-    "@oclif/plugin-help": "^5",
-    "chalk": "^5.3.0",
-    "execa": "^8.0.1",
-    "inquirer": "^9.2.14",
-    "log-symbols": "^6.0.0",
-    "ora": "^8.0.1",
-    "shelljs": "^0.8.5"
->>>>>>> fb9005bc52f4fb1d1f422b55817221e3aaa8ad65
   },
   "description": "CLI para agilizar o processo de criação de projetos em TLPP e ADVPR",
   "devDependencies": {
@@ -40,19 +29,11 @@
     "eslint": "^9",
     "eslint-config-oclif": "^6",
     "eslint-config-oclif-typescript": "^3",
-<<<<<<< HEAD
     "eslint-config-prettier": "^10.1.8",
     "mocha": "^11",
     "oclif": "^4.22.1",
     "shx": "^0.4.0",
     "sinon": "^21.0.0",
-=======
-    "eslint-config-prettier": "^9.1.0",
-    "mocha": "^10",
-    "oclif": "^4.4.12",
-    "shx": "^0.3.4",
-    "sinon": "^17.0.1",
->>>>>>> fb9005bc52f4fb1d1f422b55817221e3aaa8ad65
     "ts-node": "^10.9.2",
     "typescript": "^5"
   },
