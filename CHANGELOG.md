@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/Tiago-msC/tlpp-dev-cli/compare/0.1.0...0.1.1) (2024-02-18)
+
+
+### Bug Fixes
+
+* **deps:** update inquirer requirement from ^9.2.12 to ^9.2.14 ([4d6dc91](https://github.com/Tiago-msC/tlpp-dev-cli/commit/4d6dc914b89e4bfa22abea91b331109ed1c5e702))
+
+
+
 # [0.1.0](https://github.com/Tiago-msC/tlpp-dev-cli/compare/0.0.3...0.1.0) (2024-01-20)
 
 
