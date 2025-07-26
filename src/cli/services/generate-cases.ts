@@ -8,7 +8,7 @@ export async function generateCases(currentPath: string, nome: string) {
 
   try {
     await fs.mkdir(path.join(currentPath, 'Testes', 'Cases'), {recursive: true})
-    await fs.writeFile(path.join(currentPath, 'Testes', 'Cases', `${nome}TestCases.prw`), templateSuite)
+    await fs.writeFile(path.join(currentPath, 'Testes', 'Cases', `${nome}TestCase.prw`), templateSuite)
   } catch (error) {
     console.error(error)
   }

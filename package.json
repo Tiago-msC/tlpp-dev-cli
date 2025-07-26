@@ -4,40 +4,41 @@
     "tdc": "./bin/run.js"
   },
   "dependencies": {
-    "@oclif/core": "^3",
-    "@oclif/plugin-help": "^5",
-    "chalk": "^5.3.0",
-    "execa": "^8.0.1",
-    "inquirer": "^9.2.12",
-    "log-symbols": "^6.0.0",
-    "ora": "^8.0.1",
-    "shelljs": "^0.8.5"
+    "@oclif/core": "^4",
+    "@oclif/plugin-help": "^6",
+    "chalk": "^5.4.1",
+    "execa": "^9.6.0",
+    "inquirer": "^12.8.2",
+    "log-symbols": "^7.0.1",
+    "ora": "^8.2.0",
+    "shelljs": "^0.10.0"
   },
   "description": "CLI para agilizar o processo de criação de projetos em TLPP e ADVPR",
   "devDependencies": {
     "@oclif/prettier-config": "^0.2.1",
-    "@oclif/test": "^3",
-    "@types/chai": "^4",
-    "@types/inquirer": "^9.0.7",
+    "@oclif/test": "^4",
+    "@types/chai": "^5",
+    "@types/inquirer": "^9.0.8",
     "@types/listr": "^0.14.9",
     "@types/mocha": "^10",
-    "@types/node": "^18",
-    "@types/shelljs": "^0.8.15",
-    "@types/sinon": "^17.0.3",
-    "chai": "^4",
-    "eslint": "^8",
-    "eslint-config-oclif": "^5",
+    "@types/node": "^24",
+    "@types/shelljs": "^0.8.17",
+    "@types/sinon": "^17.0.4",
+    "chai": "^5",
+    "electron": "^37.2.4",
+    "eslint": "^9",
+    "eslint-config-oclif": "^6",
     "eslint-config-oclif-typescript": "^3",
-    "eslint-config-prettier": "^9.1.0",
-    "mocha": "^10",
-    "oclif": "^4.3.6",
-    "shx": "^0.3.4",
-    "sinon": "^17.0.1",
+    "eslint-config-prettier": "^10.1.8",
+    "mocha": "^11",
+    "oclif": "^4.22.1",
+    "shx": "^0.4.0",
+    "sinon": "^21.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
   "files": [
     "/bin",
@@ -51,7 +52,7 @@
   "oclif": {
     "bin": "tdc",
     "dirname": "tdc",
-    "commands": "./dist/commands",
+    "commands": "./dist/cli/commands",
     "plugins": [
       "@oclif/plugin-help"
     ],
@@ -73,7 +74,8 @@
     "prepack": "npm run build && oclif manifest && oclif readme",
     "prepare": "npm run build",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif readme && git add README.md"
+    "version": "oclif readme && git add README.md",
+    "build:all": "npm run build && shx cp src/electron/renderer.html dist/electron/"
   },
   "version": "0.1.0",
   "bugs": "https://github.com/Tiago-msC/tlpp-dev-cli/issues",
@@ -84,7 +86,7 @@
     "advpr",
     "devtools"
   ],
-  "types": "dist/index.d.ts",
+  "types": "dist/cli/index.d.ts",
   "exports": "./lib/index.js",
   "type": "module"
 }

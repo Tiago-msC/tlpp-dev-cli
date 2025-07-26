@@ -4,66 +4,65 @@ export function getCasesTemplate(nameClass: string) {
 //-------------------------------------------------------------------
 /*/{Protheus.doc} ${nameClass}TestCase
 
-@author COLOQUE O AUTOR
-@since COLOQUE A DATA
-@version 1.0
-@see FWDefaultTestSuit , FWDefaultTestCase
+	@author COLOQUE O AUTOR
+	@since COLOQUE A DATA
+	@version 1.0
+	@see FWDefaultTestSuit, FWDefaultTestCase
 /*/
 //-------------------------------------------------------------------
 Class ${nameClass}TestCase FROM FWDefaultTestCase
-	DATA oHelper
+	Data oHelper
 
-	METHOD  SetUpClass()
-	METHOD  ${nameClass}TestCase() Constructor
+	Method  SetUpClass()
+	Method  ${nameClass}TestCase() Constructor
 
-	METHOD  teste_001()
-	// METHOD  teste_002()
-	// METHOD  teste_003()
-	// METHOD  teste_004()
+	Method  teste_001()
+	// Method  teste_002()
+	// Method  teste_003()
+	// Method  teste_004()
 EndClass
 
 //-----------------------------------------------------------------
 /*/{Protheus.doc} ${nameClass}TestCase
 	Instancia os casos de teste
 
-@author COLOQUE O AUTOR
-@since COLOQUE A DATA
-@version 1.0
+	@author COLOQUE O AUTOR
+	@since COLOQUE A DATA
+	@version 1.0
 /*/
 //-----------------------------------------------------------------
-METHOD ${nameClass}TestCase() Class ${nameClass}TestCase
+Method ${nameClass}TestCase() Class ${nameClass}TestCase
 	_Super:FWDefaultTestSuite()
 
-	//If GetRpoRelease() > "12.1.027"
 	Self:AddTestMethod("teste_001",,"POST - Gravar agrupador de ativos sem enviar codassets")
 	// Self:AddTestMethod("teste_002",,"POST - Teste negativo - JSON com propriedades insuficientes")
 	// Self:AddTestMethod("teste_003",,"POST - Teste negativo - JSON com propriedades vazias")
 	// Self:AddTestMethod("teste_004",,"POST - Gravar alteracao ${String(nameClass).toLocaleLowerCase()}")
-	//EndIf
 Return
 
 //-----------------------------------------------------------------
 /*/{Protheus.doc} ${nameClass}TestCase
 	Instancia os casos de teste
 
-@author COLOQUE O AUTOR
-@since COLOQUE A DATA
-@version 1.0
+	@author COLOQUE O AUTOR
+	@since COLOQUE A DATA
+	@version 1.0
 /*/
 //-----------------------------------------------------------------
-METHOD SetUpClass() CLASS ${nameClass}TestCase
+Method SetUpClass() CLASS ${nameClass}TestCase
 	Local oHelper := FWTestHelper():New()
 Return oHelper
 
 //-------------------------------------------------------------------
 /*/{Protheus.doc} teste_001
-Teste automatizado - Todas as configuracoes de agrupador patrimonial disponiveis
-@author COLOQUE O AUTOR
-@since COLOQUE A DATA
-@version 1.0
+	Teste automatizado - Todas as configuracoes de agrupador patrimonial disponiveis
+
+	@author COLOQUE O AUTOR
+	@since COLOQUE A DATA
+	@version 1.0
 /*/
 //-------------------------------------------------------------------
-METHOD teste_001() CLASS ${nameClass}TestCase
+Method teste_001() CLASS ${nameClass}TestCase
 	Local aHeader   := {}
 	Local cBody     := ""
 	Local cRet      := ""
@@ -109,7 +108,7 @@ Teste automatizado - Todas as configuracoes de conciliacao disponiveis
 @version 1.0
 /*/
 //-------------------------------------------------------------------
-// METHOD teste_002() CLASS ${nameClass}TestCase
+// Method teste_002() CLASS ${nameClass}TestCase
 //     Local aHeader   := {}
 //     Local cBody     := ""
 //     Local cRet      := ""
@@ -168,7 +167,7 @@ Teste automatizado - Todas as configuracoes de conciliacao disponiveis
 // @version 1.0
 // /*/
 // //-------------------------------------------------------------------
-// METHOD teste_003() CLASS ${nameClass}TestCase
+// Method teste_003() CLASS ${nameClass}TestCase
 //     Local aHeader   := {}
 //     Local cBody     := ""
 //     Local cRet      := ""
@@ -228,7 +227,7 @@ Teste automatizado - Todas as configuracoes de conciliacao disponiveis
 // @version 1.0
 // /*/
 // //-------------------------------------------------------------------
-// METHOD teste_004() CLASS ${nameClass}TestCase
+// Method teste_004() CLASS ${nameClass}TestCase
 //     Local aHeader   := {}
 //     Local cBody     := ""
 //     Local cRet      := ""
