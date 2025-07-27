@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/Tiago-msC/tlpp-dev-cli/compare/0.2.0...0.2.1) (2025-07-27)
+
+
+### Bug Fixes
+
+* **build:** update build script to copy renderer.html to dist and remove unused main.js ([296b9c4](https://github.com/Tiago-msC/tlpp-dev-cli/commit/296b9c47d28b3fe530141d07cdc7d58b4e80e30d))
+
+
+
 # [0.2.0](https://github.com/Tiago-msC/tlpp-dev-cli/compare/0.1.1...0.2.0) (2025-07-27)
 
 

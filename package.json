@@ -76,7 +76,7 @@
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "bugs": "https://github.com/Tiago-msC/tlpp-dev-cli/issues",
   "keywords": [
     "tlpp",
