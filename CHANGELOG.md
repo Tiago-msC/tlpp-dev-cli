@@ -1,3 +1,18 @@
+# [0.2.0](https://github.com/Tiago-msC/tlpp-dev-cli/compare/0.1.1...0.2.0) (2025-07-27)
+
+
+### Bug Fixes
+
+* **deps:** reduce open pull requests limit to 1 in dependabot configuration ([5401479](https://github.com/Tiago-msC/tlpp-dev-cli/commit/54014798cc85aee269d37a00a5ee109e4531fba4))
+* **package:** resolve merge conflicts and update dependencies ([7d14dc2](https://github.com/Tiago-msC/tlpp-dev-cli/commit/7d14dc2205e63728b1a93bccb0b078cbbe7b8fe5))
+
+
+### Features
+
+* **cli:** implement new project generation commands for API and test files ([8ee06ca](https://github.com/Tiago-msC/tlpp-dev-cli/commit/8ee06cafbeb449b73a930dd953c574f50fec1795))
+
+
+
 ## [0.1.1](https://github.com/Tiago-msC/tlpp-dev-cli/compare/0.1.0...0.1.1) (2024-02-18)
 
 
