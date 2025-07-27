@@ -77,7 +77,7 @@
     "version": "oclif readme && git add README.md",
     "build:all": "npm run prepack && shx cp src/electron/renderer.html dist/electron/"
   },
-  "version": "0.1.2",
+  "version": "0.2.0",
   "bugs": "https://github.com/Tiago-msC/tlpp-dev-cli/issues",
   "keywords": [
     "tlpp",
